@@ -8,17 +8,20 @@
 
 <body>
 
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo-mobile-icon.svg" width="33" height="38"
-        alt="Логотип кот энерджи картинка">
-    </a>
-    <a class="main-header__logo-text">
-      <img class="main-header__logo-text" src="img/logo-text-mobile-icon.svg" alt="Логотип кот энерджи текст">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+  <header class="page-header">
+    <div class="container page-header__container">
+      <a class="logo" href="#">
+        <div class="logo__item">
+          <img class="logo__item-image" src="img/logo-mobile-icon.svg" width="33" height="38"
+            alt="Логотип кот энерджи картинка">
+        </div>
+        <div class="logo__item">
+          <img class="logo__item-image" src="img/logo-text-mobile-icon.svg" alt="Логотип кот энерджи текст">
+        </div>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>
@@ -26,7 +29,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="catalog-link"  href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -36,8 +39,9 @@
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+
+      </nav>
+    </div>
   </header>
   <main class="main-container-catalog">
     <section class="catalog-products">
@@ -203,12 +207,12 @@
                 </ul>
               </div>
             </div>
-            <button class="button-order">заказать</button>
+            <button class="button button--order">заказать</button>
           </li>
-          <li class="catalog-products__item-more">
-            <h2 class="more__title">Показать еще 100500 товаров</h2>
-            <h3 class="more__subtitle">На самом деле вкусов гораздо больше!</h3>
-            <button class="button-more">показать все</button>
+          <li class="catalog-products__item-more item-more">
+            <h2 class="item-more__title">Показать еще 100500 товаров</h2>
+            <h3 class="item-more__subtitle">На самом деле вкусов гораздо больше!</h3>
+            <button class="button button--more">показать все</button>
           </li>
         </ul>
       </div>
@@ -273,39 +277,38 @@
     </section>
 
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <div class="page-footer__contacts contacts">
         <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">
+        <address class="contacts__text">
           ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
-        </p>
+        </address>
         <a class="contacts__location" href="#">
           <img src="img/location.jpg" alt="адрес на карте/">
         </a>
       </div>
-      <div class="main-footer__logo">
-        <a class="main-footer__logo-text">
-          <img class="main-footer__logo-text" src="img/logo-text-mobile-icon.svg" alt="Логотип кот энерджи текст">
-        </a>
-      </div>
-      <div class="main-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
+
+      <a class="footer-logo">
+        <img class="page-footer__logo-text" src="img/logo-text-mobile-icon.svg" alt="Логотип кот энерджи текст">
+      </a>
+      <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+            Ютубе</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+      </ul>
+    </div>
+      <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy-logo-icon.svg" alt="">
