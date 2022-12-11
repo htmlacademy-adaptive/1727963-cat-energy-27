@@ -34,15 +34,15 @@
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html"> Главная </a>
+              <a class="novigation-link" href="index.html"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a class="catalog-link" href="catalog.html">
+              <a class="novigation-link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html"> Подбор программы </a>
+              <a class="novigation-link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@
             action="#"
             method="post"
           >
-            <fieldset class="information__cat">
+            <fieldset class="information__cat fieldset">
               <ul class="information__about-cat about-cat">
                 <li class="about-cat__item">
                   <label
@@ -71,7 +71,7 @@
                     >имя:*</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--nickname input"
+                    class="about-cat__name-form about-cat__name-form--nickname input text-m"
                     type="text"
                     name="name-cat"
                     id="name-cat"
@@ -86,7 +86,7 @@
                     >Вес (кг):*</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--weight input"
+                    class="about-cat__name-form about-cat__name-form--weight input text-m"
                     type="number"
                     name="weight-cat"
                     id="weight-cat"
@@ -101,7 +101,7 @@
                     >Возраст (лет):</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--age input"
+                    class="about-cat__name-form about-cat__name-form--age input text-m"
                     type="number"
                     name="age-cat"
                     id="age-cat"
@@ -112,7 +112,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="information__about-program about-program">
+            <fieldset class="information__about-program about-program fieldset">
               <legend class="visualli-hidden">выбор программы</legend>
               <ul class="about-program__list">
                 <li class="about-program__item">
@@ -147,7 +147,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="information__about-owner about-owner">
+            <fieldset class="information__about-owner about-owner fieldset">
               <h2 class="about-owner__titltle title-l">
                 Контактные данные (владельца кота)
               </h2>
@@ -159,7 +159,7 @@
                     >E-mail:*
                   </label>
                   <input
-                    class="about-owner__input input-with-icon"
+                    class="about-owner__input input-with-icon text-m"
                     type="email"
                     value="kuklachev@gmail.com"
                     name="email"
@@ -174,7 +174,7 @@
                     >Телефон:*
                   </label>
                   <input
-                    class="about-owner__input input-with-icon"
+                    class="about-owner__input input-with-icon text-m"
                     type="tel"
                     value="8 (960) 900-60-90"
                     name="phone"
@@ -184,14 +184,14 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="information__comment comment">
+            <fieldset class="information__comment comment fieldset">
               <h2 class="comment__title title-l">Комментарий</h2>
               <label class="comment__habits" for="habits"></label>
               <textarea class="comment__habits-form text-m" id="habits">
 Расскажите обо всех повадках кота</textarea
               >
             </fieldset>
-            <fieldset class="information__additionally additionally">
+            <fieldset class="information__additionally additionally fieldset">
               <h2 class="additionally__title title-l">Дополнительно</h2>
               <ul class="additionally__list">
                 <li class="additionally__item">
@@ -246,17 +246,18 @@
       </section>
       <section class="contacts">
         <div class="container contacts__container">
-          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-          <address class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="contacts-description">
+            <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+            <address class="contacts__text">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
           <a class="contacts__location" href="#">
             <img src="img/location.jpg" alt="адрес на карте/" />
           </a>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a class="footer-logo">

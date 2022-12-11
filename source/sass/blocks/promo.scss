@@ -1,0 +1,17 @@
+.promo {
+  background: url(/img/cat-background-image.jpg) no-repeat;
+  background-color: #68b738 no-repeat;
+}
+.promo__title,
+.promo__subtitle {
+  color: #ffffff;
+  text-align: center;
+}
+.promo__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

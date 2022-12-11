@@ -1,36 +1,14 @@
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2"),
-    url("../fonts/lato/Lato-Regular.woff");
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2"),
-    url("../fonts/oswald/oswaldregular.woff");
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswald/oswaldmedium.woff2"),
-    url("../fonts/oswald/oswaldmedium.woff");
-}
-
+@import "./blocks/general.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/logo.scss";
-
-.container {
-  width: 320px;
-  margin: 0;
-  padding: 0;
-}
-.button {
-  width: 280px;
-  height: 40px;
-  background: #68b738;
-  border: none;
-}
+@import "./blocks/promo.scss";
+@import "./blocks/novigation.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/form.scss";
