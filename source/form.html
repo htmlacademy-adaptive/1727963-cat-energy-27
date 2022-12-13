@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <a class="logo" href="#">
-          <div class="logo__item">
+        <div class="logo">
+          <div class="logo__item logo__cat">
             <img
               class="logo__item-image"
               src="img/logo-mobile-icon.svg"
@@ -18,33 +19,35 @@
               alt="Логотип кот энерджи картинка"
             />
           </div>
-          <div class="logo__item">
+          <div class="logo__item logo__text">
             <img
               class="logo__item-image"
               src="img/logo-text-mobile-icon.svg"
               alt="Логотип кот энерджи текст"
             />
           </div>
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+        </div>
+        <div class="novigation">
+          <button class="novigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-          <ul class="main-nav__list site-list">
+          <ul class="novigation__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html"> Главная </a>
+              <a class="novigation__link" href="index.html"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a class="catalog-link" href="catalog.html">
+              <a class="novigation__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html"> Подбор программы </a>
+              <a class="novigation__link" href="form.html">
+                Подбор программы
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -52,7 +55,7 @@
         <div class="container page-forms__container">
           <div class="selection-program">
             <h1 class="selection-program__title title">Подбор программы</h1>
-            <p class="selection-program__subtitle">
+            <p class="selection-program__subtitle text text--l">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </p>
           </div>
@@ -61,16 +64,16 @@
             action="#"
             method="post"
           >
-            <fieldset class="information__cat">
+            <fieldset class="information__cat fieldset">
               <ul class="information__about-cat about-cat">
                 <li class="about-cat__item">
                   <label
-                    class="about-cat__name about-cat__name--nickname text-m"
+                    class="about-cat__name about-cat__name--nickname text text--m"
                     for="name-cat"
                     >имя:*</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--nickname input"
+                    class="about-cat__name-form about-cat__name-form--nickname text text--m"
                     type="text"
                     name="name-cat"
                     id="name-cat"
@@ -80,12 +83,12 @@
                 </li>
                 <li class="about-cat__item">
                   <label
-                    class="about-cat__name about-cat__name--weight text-m"
+                    class="about-cat__name about-cat__name--weight text text--m"
                     for="weight-cat"
                     >Вес (кг):*</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--weight input"
+                    class="about-cat__name-form about-cat__name-form--weight text text--m"
                     type="number"
                     name="weight-cat"
                     id="weight-cat"
@@ -95,12 +98,12 @@
                 </li>
                 <li class="about-cat__item">
                   <label
-                    class="about-cat__name about-cat__name--age text-m"
+                    class="about-cat__name about-cat__name--age text text--m"
                     for="age-cat"
                     >Возраст (лет):</label
                   >
                   <input
-                    class="about-cat__name-form about-cat__name-form--age input"
+                    class="about-cat__name-form about-cat__name-form--age text text--m"
                     type="number"
                     name="age-cat"
                     id="age-cat"
@@ -111,7 +114,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="information__about-program about-program">
+            <fieldset class="information__about-program about-program fieldset">
               <legend class="visualli-hidden">выбор программы</legend>
               <ul class="about-program__list">
                 <li class="about-program__item">
@@ -121,7 +124,9 @@
                       type="radio"
                       checked="checked"
                     />
-                    <span class="about-program__name text-m">Похудение</span>
+                    <span class="about-program__name text text--m"
+                      >Похудение</span
+                    >
                   </label>
                 </li>
                 <li class="about-program__item">
@@ -130,7 +135,9 @@
                       class="about-program__form radio-button"
                       type="radio"
                     />
-                    <span class="about-program__name text-m">Набор массы</span>
+                    <span class="about-program__name text text--m"
+                      >Набор массы</span
+                    >
                   </label>
                 </li>
                 <li class="about-program__item">
@@ -139,26 +146,26 @@
                       class="about-program__form radio-button"
                       type="radio"
                     />
-                    <span class="about-program__name text-m"
+                    <span class="about-program__name text text--m"
                       >Не знаю (Нужен ваш совет)</span
                     >
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="information__about-owner about-owner">
-              <h2 class="about-owner__titltle title-l">
+            <fieldset class="information__about-owner about-owner fieldset">
+              <h2 class="about-owner__titltle title title--l">
                 Контактные данные (владельца кота)
               </h2>
               <ul class="about-owner__list">
                 <li class="about-owner__item">
                   <label
-                    class="about-owner__label about-owner__label--email text-m"
+                    class="about-owner__label about-owner__label--email text text--m"
                     for="email"
                     >E-mail:*
                   </label>
                   <input
-                    class="about-owner__input input-with-icon"
+                    class="about-owner__input input-with-icon text text--m"
                     type="email"
                     value="kuklachev@gmail.com"
                     name="email"
@@ -168,12 +175,12 @@
                 </li>
                 <li class="about-owner__item">
                   <label
-                    class="about-owner__label about-owner__label--phone text-m"
+                    class="about-owner__label about-owner__label--phone text text--m"
                     for="phone"
                     >Телефон:*
                   </label>
                   <input
-                    class="about-owner__input input-with-icon"
+                    class="about-owner__input input-with-icon text text--m"
                     type="tel"
                     value="8 (960) 900-60-90"
                     name="phone"
@@ -183,15 +190,15 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="information__comment comment">
-              <h2 class="comment__title title-l">Комментарий</h2>
+            <fieldset class="information__comment comment fieldset">
+              <h2 class="comment__title title title--l">Комментарий</h2>
               <label class="comment__habits" for="habits"></label>
-              <textarea class="comment__habits-form text-m" id="habits">
+              <textarea class="comment__habits-form text text--m" id="habits">
 Расскажите обо всех повадках кота</textarea
               >
             </fieldset>
-            <fieldset class="information__additionally additionally">
-              <h2 class="additionally__title title-l">Дополнительно</h2>
+            <fieldset class="information__additionally additionally fieldset">
+              <h2 class="additionally__title title title--l">Дополнительно</h2>
               <ul class="additionally__list">
                 <li class="additionally__item">
                   <label class="additionally__label">
@@ -200,7 +207,7 @@
                       type="checkbox"
                       checked="checked"
                     />
-                    <span class="additionally__name text-m"
+                    <span class="additionally__name text text--m"
                       >Сахарозаменитель</span
                     >
                   </label>
@@ -211,7 +218,9 @@
                       class="additionally__form checkbox"
                       type="checkbox"
                     />
-                    <span class="additionally__name text-m">Питьевая вода</span>
+                    <span class="additionally__name text text--m"
+                      >Питьевая вода</span
+                    >
                   </label>
                 </li>
                 <li class="additionally__item">
@@ -220,7 +229,7 @@
                       class="additionally__form checkbox"
                       type="checkbox"
                     />
-                    <span class="additionally__name text-m">Молоко</span>
+                    <span class="additionally__name text text--m">Молоко</span>
                   </label>
                 </li>
                 <li class="additionally__item">
@@ -229,7 +238,9 @@
                       class="additionally__form checkbox"
                       type="checkbox"
                     />
-                    <span class="additionally__name text-m">Витамины</span>
+                    <span class="additionally__name text text--m"
+                      >Витамины</span
+                    >
                   </label>
                 </li>
               </ul>
@@ -245,17 +256,20 @@
       </section>
       <section class="contacts">
         <div class="container contacts__container">
-          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-          <address class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="contacts-description">
+            <b class="contacts__title title title--s"
+              >приглашаем к сотрудничеству дилеров!</b
+            >
+            <address class="contacts__text text">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
           <a class="contacts__location" href="#">
             <img src="img/location.jpg" alt="адрес на карте/" />
           </a>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a class="footer-logo">

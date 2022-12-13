@@ -1,0 +1,21 @@
+.text {
+  font-family: $font-low;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.text--s {
+  font-size: 12px;
+  line-height: 16px;
+}
+.text--m {
+  font-family: $font-large;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.text--l {
+  font-family: $font-large;
+  font-size: 14px;
+  text-transform: uppercase;
+}

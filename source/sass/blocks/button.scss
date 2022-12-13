@@ -1,0 +1,18 @@
+.button {
+  width: 280px;
+  height: 40px;
+  background: $basic-green;
+  border: none;
+  font-family: $font-large;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button--outline {
+  background: $basic-grey;
+  color: $special-dark-grey;
+}
