@@ -1,0 +1,24 @@
+.title {
+  font-family: $font-large;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+.title--s {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.title--m {
+  line-height: 40px;
+}
+.title--l {
+  font-size: 24px;
+  line-height: 26px;
+}
+.title--xl {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
