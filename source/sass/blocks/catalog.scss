@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 60px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 80px;
+  }
+}

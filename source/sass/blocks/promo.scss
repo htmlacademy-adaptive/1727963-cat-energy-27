@@ -7,3 +7,21 @@
   color: #ffffff;
   text-align: center;
 }
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 709px;
+    min-height: 800px;
+    background: url(/img/cat-tablet-image.jpg) no-repeat;
+  }
+
+  .promo__title,
+  .promo__subtitle {
+    color: #000000;
+  }
+}
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 696px;
+    background: url(/img/cat-tablet-image.jpg) no-repeat;
+  }
+}
