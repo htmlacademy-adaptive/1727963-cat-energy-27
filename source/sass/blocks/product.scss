@@ -11,3 +11,15 @@
   color: #000000;
   text-transform: uppercase;
 }
+@media (min-width: $tablet-width) {
+  .programs__item {
+    width: 708px;
+    min-height: 372px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .programs__item {
+    width: 570px;
+    min-height: 374px;
+  }
+}

@@ -1,11 +1,27 @@
 .novigation__list {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  line-height: 20px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
-  list-style-type: none;
-  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .novigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+  .novigation__toggle {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .novigation__list {
+    width: 448px;
+  }
 }
 
 .novigation__link {

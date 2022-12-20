@@ -1,1 +1,11 @@
-
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .advantages__list-item {
+    width: 237px;
+    min-height: 280px;
+  }
+}

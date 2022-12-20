@@ -1,0 +1,10 @@
+@media (min-width: $tablet-width) {
+  .page-main__information {
+    width: 630px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .page-main__information {
+    width: 1220px;
+  }
+}

@@ -1,0 +1,6 @@
+@media (min-width: $desktop-width) {
+  .programs__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

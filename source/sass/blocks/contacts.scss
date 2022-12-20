@@ -1,0 +1,10 @@
+@media (min-width: $desktop-width) {
+  .contacts-description {
+    display: flex;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts {
+    background: url("../../img/map-desktop-image.jpg") no-repeat;
+  }
+}
