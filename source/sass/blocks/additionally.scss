@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .additionally__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

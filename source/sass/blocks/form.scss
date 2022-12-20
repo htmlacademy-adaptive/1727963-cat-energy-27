@@ -1,24 +1,3 @@
 .fieldset {
   border: none;
 }
-
-@media (min-width: $tablet-width) {
-  .page-main__information {
-    width: 630px;
-  }
-  .additionally__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-  }
-}
-@media (min-width: $desktop-width) {
-  .page-main__information {
-    width: 1220px;
-  }
-
-  .additionally__list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
