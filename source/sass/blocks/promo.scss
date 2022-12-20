@@ -1,5 +1,5 @@
 .promo {
-  background: url("/img/cat-background-image.jpg") no-repeat;
+  background: url("../../img/cat-background-image.jpg") no-repeat;
   background-color: #68b738 no-repeat;
 }
 .promo__title,
@@ -11,7 +11,7 @@
   .promo {
     width: 709px;
     min-height: 800px;
-    background: url("/img/cat-tablet-image.jpg") no-repeat;
+    background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
 
   .promo__title,
@@ -22,6 +22,6 @@
 @media (min-width: $desktop-width) {
   .promo {
     min-height: 696px;
-    background: url("/img/cat-tablet-image.jpg") no-repeat;
+    background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
 }
