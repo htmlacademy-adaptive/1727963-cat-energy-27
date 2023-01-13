@@ -1,6 +1,29 @@
+.programs__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 33px 18px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 @media (min-width: $desktop-width) {
   .programs__container {
     display: flex;
     justify-content: space-between;
+    gap: 80px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .programs__item {
+    display: block;
+    width: 708px;
+    padding: 62px 53px 52px 77px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .programs__item {
+    gap: 80px;
+    width: 570px;
+    padding: 41px 61px 55px 52px;
   }
 }

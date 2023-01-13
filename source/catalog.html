@@ -28,29 +28,31 @@
             />
           </div>
         </div>
-        <div class="novigation">
-          <button class="novigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <div class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden"></span>
           </button>
-
-          <ul class="novigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="novigation__link" href="index.html"> Главная </a>
-            </li>
-            <li class="site-list__item">
-              <a class="novigation__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="novigation__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+          <div class="navigation__wrapper">
+            <ul class="navigation__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a> Главная </a>
+              </li>
+              <li class="site-list__item">
+                <a class="navigation__link" href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="navigation__link" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
+    <script src="script.js"></script>
     <main class="page-main">
       <section class="catalog">
         <div class="container catalog__container">
@@ -62,13 +64,23 @@
                 src="img/chicken-mini-icon.jpg"
                 alt="картинка маленького корма с курицей."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">500 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">курица</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">700 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">500 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">курица</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">700 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -77,13 +89,26 @@
                 src="img/chicken-max-icon.jpg"
                 alt="картинка большого корма с курицей."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 1000 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">1000 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">курица</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">1000 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">1000 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">курица</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">1000 р</p>
+                  </div>
+                </div>
+              </div>
+
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -92,13 +117,23 @@
                 src="img/fish-mini-icon.jpg"
                 alt="картинка маленького корма с рыбой."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">500 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">рыба</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">700 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">500 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">рыба</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">700 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -107,13 +142,25 @@
                 src="img/fish-max-icon.jpg"
                 alt="картинка большого корма с рыбой."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 1000 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">1000 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">рыба</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">1000 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">1000 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">рыба</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">1000 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -122,13 +169,23 @@
                 src="img/cereal-mini-icon.jpg"
                 alt="картинка маленького корма с гречкой."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">500 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">гречка</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">400 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">500 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">гречка</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">400 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -137,13 +194,25 @@
                 src="img/cereal-max-icon.jpg"
                 alt="картинка большого корма с гречкой."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 1000 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">1000 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">гречка</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">700 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">1000 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">гречка</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">700 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card">
@@ -152,13 +221,23 @@
                 src="img/slim-icon.jpg"
                 alt="картинка маленького корма с рисом."
               />
-              <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
-              <p class="card__text text-s">Масса</p>
-              <p class="card__text text-s">500 г</p>
-              <p class="card__text text-s">вкус</p>
-              <p class="card__text text-s">рис</p>
-              <p class="card__text text-s">цена</p>
-              <p class="card__text text-s">500 р</p>
+              <div class="card__description">
+                <h3 class="card__title title title--s">Cat Energy PRO 500 г</h3>
+                <div class="card__more">
+                  <div class="card__more-text">
+                    <p class="card__text text-s">Масса</p>
+                    <p class="card__text text-s">500 г</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">вкус</p>
+                    <p class="card__text text-s">рис</p>
+                  </div>
+                  <div class="card__more-text">
+                    <p class="card__text text-s">цена</p>
+                    <p class="card__text text-s">500 р</p>
+                  </div>
+                </div>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="catalog-list__item card card-show-more">
@@ -183,28 +262,36 @@
               <h3 class="additional-card__title title title--s">
                 Сахарозаменитель
               </h3>
-              <p class="additional-card__text">1 упаковка (100 г)</p>
-              <p class="additional-card__text">200 р</p>
+              <div class="additional-card__more">
+                <p class="additional-card__text">1 упаковка (100 г)</p>
+                <p class="additional-card__text">200 р</p>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="additional-products__item additional-card">
               <h3 class="additional-card__title title title--s">
                 питьевая вода
               </h3>
-              <p class="additional-card__text">5 литров</p>
-              <p class="additional-card__text">200 р</p>
+              <div class="additional-card__more">
+                <p class="additional-card__text">5 литров</p>
+                <p class="additional-card__text">200 р</p>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="additional-products__item additional-card">
               <h3 class="additional-card__title title title--s">молоко</h3>
-              <p class="additional-card__text">1 литр</p>
-              <p class="additional-card__text">100 р</p>
+              <div class="additional-card__more">
+                <p class="additional-card__text">1 литр</p>
+                <p class="additional-card__text">100 р</p>
+              </div>
               <button class="button button--primary">заказать</button>
             </div>
             <div class="additional-products__item additional-card">
               <h3 class="additional-card__title title title--s">витамины</h3>
-              <p class="additional-card__text">1 упаковка (30 г)</p>
-              <p class="additional-card__text">300 р</p>
+              <div class="additional-card__more">
+                <p class="additional-card__text">1 упаковка (30 г)</p>
+                <p class="additional-card__text">300 р</p>
+              </div>
               <button class="button button--primary button--additional">
                 заказать
               </button>
@@ -259,13 +346,16 @@
               >приглашаем к сотрудничеству дилеров!</b
             >
             <address class="contacts__text text">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              ул. Большая <br />
+              Конюшенная, д. 19/8 Санкт-Петербург
             </address>
           </div>
-          <a class="contacts__location" href="#">
-            <img src="img/location.jpg" alt="адрес на карте/" />
-          </a>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
+        ></iframe>
       </section>
     </main>
     <footer class="page-footer">

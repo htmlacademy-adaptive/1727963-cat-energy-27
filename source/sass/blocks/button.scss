@@ -16,3 +16,17 @@
   background: $basic-grey;
   color: $special-dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .button--primary {
+    width: 244px;
+    min-height: 54px;
+    margin-left: 90px;
+    margin-top: 49px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .button--primary {
+    margin-top: 52px;
+  }
+}

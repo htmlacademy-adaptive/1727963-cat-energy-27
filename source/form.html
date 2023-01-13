@@ -28,29 +28,31 @@
             />
           </div>
         </div>
-        <div class="novigation">
-          <button class="novigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <div class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden"></span>
           </button>
-
-          <ul class="novigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="novigation__link" href="index.html"> Главная </a>
-            </li>
-            <li class="site-list__item">
-              <a class="novigation__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="novigation__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+          <div class="navigation__wrapper">
+            <ul class="navigation__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a> Главная </a>
+              </li>
+              <li class="site-list__item">
+                <a class="navigation__link" href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="navigation__link" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
+    <script src="script.js"></script>
     <main class="page-main">
       <section class="page-forms">
         <div class="container page-forms__container">
@@ -262,13 +264,16 @@
               >приглашаем к сотрудничеству дилеров!</b
             >
             <address class="contacts__text text">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              ул. Большая <br />
+              Конюшенная, д. 19/8 Санкт-Петербург
             </address>
           </div>
-          <a class="contacts__location" href="#">
-            <img src="img/location.jpg" alt="адрес на карте/" />
-          </a>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
+        ></iframe>
       </section>
     </main>
     <footer class="page-footer">

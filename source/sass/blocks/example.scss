@@ -2,3 +2,54 @@
   background-color: #f2f2f2;
   padding-top: 25px;
 }
+.example__title {
+  margin: 0;
+}
+.example__text {
+  margin-top: 40px;
+}
+.example__price-text {
+  margin-top: 20px;
+}
+.example__live {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.example__diet-number {
+  min-width: 124px;
+  display: flex;
+  justify-content: center;
+}
+.example__diet-text {
+  min-width: 77px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.example__price {
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__container {
+    background-color: #ffffff;
+  }
+  .example__text {
+    margin-top: 63px;
+  }
+  .example__diet-number {
+    min-width: 162px;
+  }
+  br {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .example__text {
+    width: 436px;
+  }
+  .example__live {
+    width: 436px;
+  }
+}

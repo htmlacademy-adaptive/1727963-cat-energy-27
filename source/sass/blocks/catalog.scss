@@ -1,8 +1,31 @@
+.catalog-list {
+  margin-top: 49px;
+}
+.catalog-list__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__image {
+  width: 50%;
+}
+.card__more-text {
+  display: flex;
+  justify-content: space-between;
+}
+.card__description {
+  width: 50%;
+}
 @media (min-width: $tablet-width) {
   .catalog-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     gap: 60px;
+  }
+  .catalog-list__item {
+    flex-direction: column;
+    .card__more-text {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }
 @media (min-width: $desktop-width) {

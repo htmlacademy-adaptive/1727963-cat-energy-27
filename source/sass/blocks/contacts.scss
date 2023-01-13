@@ -1,10 +1,24 @@
-@media (min-width: $desktop-width) {
-  .contacts-description {
-    display: flex;
+.contacts-description {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.contacts iframe {
+  width: 320px;
+  height: 362px;
+  border: none;
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .contacts iframe {
+    width: 768px;
+    height: 400px;
   }
 }
+
 @media (min-width: $desktop-width) {
-  .contacts {
-    background: url("../../img/map-desktop-image.jpg") no-repeat;
+  .contacts iframe {
+    width: 1440px;
   }
 }
