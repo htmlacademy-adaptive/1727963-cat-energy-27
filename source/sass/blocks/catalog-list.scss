@@ -5,16 +5,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.card__image {
-  width: 50%;
-}
-.card__more-text {
-  display: flex;
-  justify-content: space-between;
-}
-.card__description {
-  width: 50%;
-}
+
 @media (min-width: $tablet-width) {
   .catalog-list {
     display: grid;
@@ -23,9 +14,6 @@
   }
   .catalog-list__item {
     flex-direction: column;
-    .card__more-text {
-      border-bottom: 1px solid #cdcdcd;
-    }
   }
 }
 @media (min-width: $desktop-width) {
