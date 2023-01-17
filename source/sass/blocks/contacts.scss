@@ -11,9 +11,21 @@
   display: block;
 }
 @media (min-width: $tablet-width) {
+  .contacts-description {
+    padding: 60px 40px 56px;
+    background: $basic-grey;
+    margin-top: 76px;
+  }
   .contacts iframe {
     width: 768px;
     height: 400px;
+  }
+  .contacts__title {
+    width: 172px;
+    margin-left: 70px;
+  }
+  .contacts__text {
+    width: 160px;
   }
 }
 

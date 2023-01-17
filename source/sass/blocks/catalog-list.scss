@@ -4,6 +4,9 @@
 .catalog-list__item {
   display: flex;
   flex-wrap: wrap;
+  padding: 11px 0 14px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,6 +17,8 @@
   }
   .catalog-list__item {
     flex-direction: column;
+    padding: 37px 39px;
+    background-color: $basic-grey;
   }
 }
 @media (min-width: $desktop-width) {

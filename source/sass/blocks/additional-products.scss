@@ -1,15 +1,20 @@
 .additional-products__bonus {
-  width: 280px;
   background: rgba(104, 183, 56, 0.85);
   background-image: url(/img/cat-bonus-image.jpg);
+  background-repeat: no-repeat;
+  min-height: 200px;
+  margin-top: 69px;
 }
-.additional-card__more {
-  display: flex;
-  justify-content: space-between;
+
+.additional-products__title {
+  margin: 25px 0 36px;
 }
-.additional-card__text {
-  margin: 0;
+.additional-products__item {
+  padding: 13px 0 16px;
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
 }
+
 @media (min-width: $tablet-width) {
   .additional-products__list {
     display: flex;

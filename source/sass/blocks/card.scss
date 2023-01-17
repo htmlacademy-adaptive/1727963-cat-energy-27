@@ -14,12 +14,25 @@
 .card__description {
   width: 50%;
 }
+.card__more {
+  margin-top: 18px;
+}
 @media (min-width: $tablet-width) {
   .card__title {
-    width: 252px;
+    padding: 0 72px;
   }
+
   .card__more-text {
-    width: 252px;
+    width: 100%;
+
     border-bottom: 1px solid #cdcdcd;
+  }
+}
+@media (min-width: $desktop-width) {
+  .card__description {
+    width: 100%;
+  }
+  .card__title {
+    padding: 0 36px;
   }
 }
