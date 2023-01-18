@@ -1,3 +1,10 @@
+.additionally__item {
+  margin-bottom: 19px;
+}
+.additionally__title {
+  margin-top: 22px;
+  margin-bottom: 34px;
+}
 @media (min-width: $tablet-width) {
   .additionally__list {
     display: grid;
