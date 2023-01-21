@@ -4,7 +4,17 @@
 .additionally__title {
   margin-top: 22px;
   margin-bottom: 34px;
+  position: relative;
 }
+.additionally__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 300%;
+  height: 2px;
+  background-color: #68b738;
+}
+
 @media (min-width: $tablet-width) {
   .additionally__list {
     display: grid;

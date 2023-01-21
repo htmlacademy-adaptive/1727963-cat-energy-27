@@ -1,7 +1,17 @@
 .about-owner__title {
   margin-top: 26px;
   margin-bottom: 35px;
+  position: relative;
 }
+.about-owner__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 300%;
+  height: 2px;
+  background-color: #68b738;
+}
+
 .about-owner__item {
   display: flex;
   justify-content: space-between;
@@ -13,6 +23,12 @@
   width: 100%;
   margin-left: 10px;
   border: 1px solid #cdcdcd;
+  background-image: url(../../img/letter-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+.about-owner__input-phone {
+  background-image: url(../../img/phone-icon.svg);
 }
 .about-owner__label {
   white-space: nowrap;
