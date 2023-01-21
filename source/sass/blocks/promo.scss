@@ -1,4 +1,6 @@
 .promo {
+  width: 280px;
+  margin: 0 auto;
   background: url("../../img/cat-background-image.jpg") no-repeat;
   background-color: #68b738 no-repeat;
 }
@@ -9,7 +11,7 @@
 }
 @media (min-width: $tablet-width) {
   .promo {
-    width: 709px;
+    width: 708px;
     min-height: 800px;
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
