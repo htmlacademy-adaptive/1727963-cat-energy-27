@@ -1,6 +1,9 @@
+.example {
+  background: #f2f2f2;
+}
 .example__container {
-  background-color: #f2f2f2;
   padding-top: 25px;
+  background: #f2f2f2;
 }
 .example__title {
   margin: 0;
@@ -32,9 +35,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example__container {
-    background-color: #ffffff;
-  }
   .example__text {
     margin-top: 63px;
   }

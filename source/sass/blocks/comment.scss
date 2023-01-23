@@ -6,11 +6,29 @@
 .comment__title {
   position: relative;
 }
-.comment__title::before {
+
+.comment__title::after {
   content: "";
+  margin-left: 10px;
   position: absolute;
   top: 50%;
-  width: 300%;
+  width: 1000%;
   height: 2px;
   background-color: #68b738;
+}
+@media (min-width: $tablet-width) {
+  .comment__title::after {
+    content: "";
+    margin-left: 40px;
+  }
+  .comment__title::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
+    right: 100%;
+    margin-right: 40px;
+  }
 }

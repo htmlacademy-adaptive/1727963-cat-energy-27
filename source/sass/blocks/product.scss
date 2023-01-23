@@ -11,6 +11,10 @@
   color: #000000;
   text-transform: uppercase;
   margin-top: 15px;
+  background-image: url(../../img/arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  min-width: 139px;
 }
 .product__text {
   padding-bottom: 23px;
@@ -28,6 +32,9 @@
   }
   .product__link {
     margin-top: 24px;
+    min-width: 165px;
+    display: block;
+    background-position: left 101px center;
   }
   .product__icon {
     display: none;

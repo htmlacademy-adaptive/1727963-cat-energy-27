@@ -29,6 +29,9 @@
 @media (min-width: $desktop-width) {
   .promo {
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
   .promo__title {
     margin-top: 111px;

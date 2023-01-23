@@ -14,7 +14,10 @@
   border-bottom: 1px solid #cdcdcd;
   border-top: 1px solid #cdcdcd;
 }
-
+.additional-products__all {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media (min-width: $tablet-width) {
   .additional-products__list {
     display: flex;
@@ -30,12 +33,12 @@
   }
 }
 @media (min-width: $desktop-width) {
-  .additional-products__container {
-    display: flex;
-  }
   .additional-products__item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .additional-products__all {
+    flex-wrap: nowrap;
   }
 }

@@ -5,21 +5,19 @@
   padding-bottom: 26px;
 }
 .contacts iframe {
-  width: 280px;
-  height: 362px;
+  width: 100%;
+  left: 0;
+  right: 0;
   border: none;
   display: block;
+  height: 400px;
 }
 @media (min-width: $tablet-width) {
   .contacts-description {
     padding: 60px 40px 56px;
-    background: $basic-grey;
     margin-top: 76px;
   }
-  .contacts iframe {
-    width: 768px;
-    height: 400px;
-  }
+
   .contacts__title {
     width: 172px;
     margin-left: 70px;
@@ -30,7 +28,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts iframe {
-    width: 1440px;
+  .contacts {
+    position: relative;
+  }
+  .contacts__container {
+    position: absolute;
+    z-index: 1;
+  }
+  .contacts-description {
+    padding: 56px 60px 80px;
+    background: #ffffff;
   }
 }
