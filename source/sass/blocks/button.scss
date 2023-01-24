@@ -16,3 +16,18 @@
   background: $basic-grey;
   color: $special-dark-grey;
 }
+.button__catalog {
+  width: 100%;
+}
+@media (min-width: $tablet-width) {
+  .button--primary {
+    min-height: 54px;
+
+    margin-top: 49px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .button--primary {
+    margin-top: 52px;
+  }
+}

@@ -9,19 +9,25 @@
 }
 @media (min-width: $tablet-width) {
   .promo {
-    width: 709px;
     min-height: 800px;
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
 
   .promo__title,
   .promo__subtitle {
+    margin: 36px 0 0 90px;
     color: #000000;
+    text-align: left;
+  }
+  .promo__subtitle {
+    margin-top: 41px;
   }
 }
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 696px;
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
+  }
+  .promo__title {
+    margin-top: 111px;
   }
 }

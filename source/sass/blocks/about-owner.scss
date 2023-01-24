@@ -1,0 +1,52 @@
+.about-owner__title {
+  margin-top: 26px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.about-owner__title::after {
+  content: "";
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  width: 1000%;
+  height: 2px;
+  background-color: #68b738;
+}
+
+.about-owner__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.about-owner__input {
+  padding: 13px 14px;
+  width: 100%;
+  margin-left: 10px;
+  border: 1px solid #cdcdcd;
+  background-image: url(../../img/letter-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+.about-owner__input-phone {
+  background-image: url(../../img/phone-icon.svg);
+}
+.about-owner__label {
+  white-space: nowrap;
+}
+@media (min-width: $tablet-width) {
+  .about-owner__title::after {
+    margin-left: 40px;
+  }
+  .about-owner__title::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
+    right: 100%;
+    margin-right: 40px;
+  }
+}

@@ -1,7 +1,6 @@
 .logo {
   display: flex;
   flex-wrap: wrap;
-  height: 38px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -19,4 +18,14 @@
 .logo__text {
   margin-top: 23px;
   margin-left: 57px;
+}
+@media (min-width: $tablet-width) {
+  .logo__text {
+    margin-left: 12px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .logo__text {
+    margin-left: 14px;
+  }
 }

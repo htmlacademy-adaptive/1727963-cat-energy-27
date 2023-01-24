@@ -1,0 +1,38 @@
+.card__title {
+  width: 76px;
+}
+.card__text {
+  margin: 0;
+}
+.card__image {
+  width: 50%;
+}
+.card__more-text {
+  display: flex;
+  justify-content: space-between;
+}
+.card__description {
+  width: 50%;
+}
+.card__more {
+  margin-top: 18px;
+}
+@media (min-width: $tablet-width) {
+  .card__title {
+    padding: 0 72px;
+  }
+
+  .card__more-text {
+    width: 100%;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+@media (min-width: $desktop-width) {
+  .card__description {
+    width: 100%;
+  }
+  .card__title {
+    padding: 0 36px;
+  }
+}

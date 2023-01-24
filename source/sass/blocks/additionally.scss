@@ -1,8 +1,40 @@
+.additionally__item {
+  margin-bottom: 19px;
+}
+.additionally__title {
+  margin-top: 22px;
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.additionally__title::after {
+  content: "";
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  width: 1000%;
+  height: 2px;
+  background-color: #68b738;
+}
+
 @media (min-width: $tablet-width) {
   .additionally__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+  }
+  .additionally__title::after {
+    margin-left: 40px;
+  }
+  .additionally__title::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
+    right: 100%;
+    margin-right: 40px;
   }
 }
 @media (min-width: $desktop-width) {
