@@ -111,8 +111,6 @@ fieldset {
   }
 }
 .promo {
-  width: 280px;
-  margin: 0 auto;
   background: url("../../img/cat-background-image.jpg") no-repeat;
   background-color: #68b738 no-repeat;
 }
@@ -125,7 +123,6 @@ fieldset {
 
 @media (min-width: 768px) {
   .promo {
-    width: 708px;
     min-height: 800px;
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
@@ -144,9 +141,6 @@ fieldset {
 @media (min-width: 1440px) {
   .promo {
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
-    width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 
   .promo__title {
@@ -614,8 +608,6 @@ fieldset {
 }
 
 .promo {
-  width: 280px;
-  margin: 0 auto;
   background: url("../../img/cat-background-image.jpg") no-repeat;
   background-color: #68b738 no-repeat;
 }
@@ -628,7 +620,6 @@ fieldset {
 
 @media (min-width: 768px) {
   .promo {
-    width: 708px;
     min-height: 800px;
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
   }
@@ -647,9 +638,6 @@ fieldset {
 @media (min-width: 1440px) {
   .promo {
     background: url("../../img/cat-tablet-image.jpg") no-repeat;
-    width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 
   .promo__title {
